@@ -15,7 +15,7 @@ The decision is to identify how many highland hectares and how many valley hecta
 X1: hectares of valley
 x2: hectares of highland
 | Maximize hectares of each habitat variables $X_1$, $X_2$ | hectares = 5 $X_1$ + 4 $X_2$ |
-|----------------------------------------------|--------------------------|
+|-------------------------------------------------------------|----------------------------------|
 | Subject to                                                  |                                  |
 | Budget Constraint                                           | 300$X_1$ + 200$X_2$ $\leq$ 24000 |
 | Social upheaval Constraint                                  | 5$X_1$ + 2$X_2$ $\leq$ 400       |
