@@ -10,3 +10,16 @@ How many hectares of each habitat should be conserved? The decision is not so si
 
 The maximum budget you have is 24,000 (thousands of dollars). The total social upheaval should be limited to not more than a total of 400 cases.
 The decision is to identify how many highland hectares and how many valley hectares should be purchased to maximize the total plant species conserved, given the constraints above.
+
+(Q3a) Write out the decision variables, objective function and constraints (using the table template provided above). Please include ALL relevant constraints.
+X1: hectares of valley
+x2: hectares of highland
+| Maximize hectares of each habitat variables $X_1$, $X_2$ | hectares = 5 $X_1$ + 4 $X_2$ |
+|----------------------------------------------|--------------------------|
+| Subject to                                                  |                                  |
+| Budget Constraint                                           | 300$X_1$ + 200$X_2$ $\leq$ 24000 |
+| Social upheaval Constraint                                  | 5$X_1$ + 2$X_2$ $\leq$ 400       |
+| Valley species Constraint                                   | $X_1$  + 0$X_2$ $\leq$ 70        |
+| Highland species Constraint                                 | 0$X_1$ +  $X_2$ $\leq$ 60        |
+| Non-Negativity Constraint 1                                 | $X_1$ $\geq$ 0                   |
+| Non-Negativity Constraint 2                                 | $X_2$ $\geq$ 0                   |
