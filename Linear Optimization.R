@@ -11,7 +11,7 @@ How many hectares of each habitat should be conserved? The decision is not so si
 The maximum budget you have is 24,000 (thousands of dollars). The total social upheaval should be limited to not more than a total of 400 cases.
 The decision is to identify how many highland hectares and how many valley hectares should be purchased to maximize the total plant species conserved, given the constraints above.
 
-1. Write out the decision variables, objective function and constraints (using the table template provided above). Please include ALL relevant constraints.
+# 1. Write out the decision variables, objective function and constraints (using the table template provided above). Please include ALL relevant constraints.
 X1: hectares of valley
 x2: hectares of highland
 | Maximize hectares of each habitat variables $X_1$, $X_2$ | hectares = 5 $X_1$ + 4 $X_2$ |
@@ -24,7 +24,7 @@ x2: hectares of highland
 | Non-Negativity Constraint 1                                 | $X_1$ $\geq$ 0                   |
 | Non-Negativity Constraint 2                                 | $X_2$ $\geq$ 0                   |
 
-2. Program and run code in R to solve your formulated linear problem above, using `lpSolve` in R. Is there any feasible solution and if yes, what is the optimal hectare purchase plan to maximize the total plant species conserved? What is the total plant species conserved at the optimal hecture purchase plan?
+# 2. Program and run code in R to solve your formulated linear problem above, using `lpSolve` in R. Is there any feasible solution and if yes, what is the optimal hectare purchase plan to maximize the total plant species conserved? What is the total plant species conserved at the optimal hecture purchase plan?
 objective.fn <-c(5, 4)
 const.mat <- matrix(c(300, 200, 5, 2, 1, 0, 0, 1), ncol = 2, byrow = TRUE)
 const.dir <- c('<=', '<=', '<=', '<=')
