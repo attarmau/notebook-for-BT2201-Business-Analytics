@@ -66,4 +66,14 @@ count(dfc3iii)
 # ii)	Using dplyr, keep only observation of day 21, then sort the data in decreasing order of `wtkg` followed by increasing order
 #     Chick`. The output should have the observations arranged in decreasing order of wtkg and for observations with the same wtkg, the observations will be ordered in increasing order of Chick. Which three Chicks have the highest weight at day 21? (4 marks)
 
+#i
+dfc4 <- dfc[dfc$Time == 8,]
+sort(dfc4$size)
+count(dfc4[dfc4$size == 'Large',])
+count(dfc4[dfc4$size == 'Small',])
 
+
+#ii
+dfc [order(dfc$wtkg, decreasing = TRUE) & order(dfc$Chick, decreasing = FALSE),]
+dfc [dfc$Time == 21,]
+#Which three Chicks have the highest weight at day 21? -> 400, 388, 232
