@@ -1,4 +1,4 @@
- For this part of the tutorial, you will be using the built-in dataset `ChickWeight`. 
+ This part will use dataset `ChickWeight`. 
 # This dataset is from an experiment conducted to study the effect of diet on early growth of chicks. 
 
 # The 2 variables are defined as follows:
