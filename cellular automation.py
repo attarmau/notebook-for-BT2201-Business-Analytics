@@ -35,3 +35,5 @@ def classify_ca(states):
     else:
         return "Class 4"
 
+# Create subplots for each rule and seed type
+fig, axs = plt.subplots(6, 2, figsize=(10, 20))
