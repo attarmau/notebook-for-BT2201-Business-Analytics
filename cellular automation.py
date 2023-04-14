@@ -37,3 +37,11 @@ def classify_ca(states):
 
 # Create subplots for each rule and seed type
 fig, axs = plt.subplots(6, 2, figsize=(10, 20))
+
+# Rule 30
+states_single = cellular_automaton(30, "single", 100, 200)
+states_random = cellular_automaton(30, "random", 100, 200)
+axs[0, 0].imshow(states_single, cmap="binary")
+axs[0, 0].set_title("Rule 30 - Single Cell Seed")
+axs[0, 1].imshow(states_random, cmap="binary")
+axs[0, 1].set_title("Rule 30 - Random Seed\n{}".format(classify_ca(states_random)))
