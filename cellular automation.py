@@ -24,3 +24,14 @@ def cellular_automaton(rule, seed, t, N):
             states[i, j] = transition_table[7 - (left * 4 + middle * 2 + right)]
     return states
 
+def classify_ca(states):
+    # Classify the cellular automaton based on the patterns it produces
+    if np.all(states == 0) or np.all(states == 1):
+        return "Class 1"
+    elif np.array_equal(states[0], states[-1]):
+        return "Class 2"
+    elif np.max(np.abs(np.diff(states, axis=0))) <= 1:
+        return "Class 3"
+    else:
+        return "Class 4"
+
