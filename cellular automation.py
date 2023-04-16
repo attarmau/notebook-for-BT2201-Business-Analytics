@@ -45,3 +45,11 @@ axs[0, 0].imshow(states_single, cmap="binary")
 axs[0, 0].set_title("Rule 30 - Single Cell Seed")
 axs[0, 1].imshow(states_random, cmap="binary")
 axs[0, 1].set_title("Rule 30 - Random Seed\n{}".format(classify_ca(states_random)))
+
+# Rule 54
+states_single = cellular_automaton(54, "single", 100, 200)
+states_random = cellular_automaton(54, "random", 100, 200)
+axs[1, 0].imshow(states_single, cmap="binary")
+axs[1, 0].set_title("Rule 54 - Single Cell Seed")
+axs[1, 1].imshow(states_random, cmap="binary")
+axs[1, 1].set_title("Rule 54 - Random Seed\n{}".format(classify_ca(states_random)))
