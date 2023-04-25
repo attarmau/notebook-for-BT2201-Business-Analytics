@@ -41,7 +41,7 @@ Each observation represents a CEO's salary with its respective firm characterist
 #data('ceosal1') 
 #CS<-ceosal1
 
-# Q1.(a) Plot a histogram for `salary`. What can you deduce about the distribution of CEO salaries from this histogram? (2 mark)
+# Q1.(a) Plot a histogram for `salary`. What can you deduce about the distribution of CEO salaries from this histogram?
 h.s <- hist (ceosal1$`salary`,
              main= 'Histogram of salary',
              xlab = 'salary ( thousands $ )',
@@ -51,7 +51,8 @@ h.s <- hist (ceosal1$`salary`,
              labels = TRUE)
              
 # Q1.(b) In the past, the proportion of CEO with salary greater than $1 million has averaged around 0.50 (i.e. population proportion for `salary` >= 1million is 0.50). Based on the sample in this dataset, is there sufficient evidence (at 5% level of significance) to conclude that the population proportion for salary being greater than  $1million is equal to 0.5? State your hypotheses, conduct the hypotheses test and provide conclusions. -> z statistic
-# H0: proportion = 0.5 ; H1: proportion != 0.5
+# One sample test for proportion -> hence use the z statistic
+## H0: proportion = 0.5 ; H1: proportion != 0.5
 sly1000 <- ceosal1 %>% filter (salary >= 1000) 
 psly1000 <- nrow(sly1000) / nrow(Salaries)
 psly1000
@@ -65,7 +66,7 @@ z < cv95
 
 # Q1.(c) You are tasked to explore if CEO salaries vary across firm types.
 (i) First, create a variable `firm` and label it as “1” if it is an industrial firm, “2” if it is a financial firm, “3” if it is a consumer product firm, and “4” if it is a transport or utilities firm. -> ANOVA
-
+# More than two smaple test for means -> hence use ANOVA
 ceosal1$firm[ceosal1[,'indus'] == 1] <- '1'
 ceosal1$firm[ceosal1[,'finance'] == 1] <- '2'
 ceosal1$firm[ceosal1[,'consprod'] == 1] <- '3'
