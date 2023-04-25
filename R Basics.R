@@ -33,3 +33,15 @@ df3.2$len[df3.2[,'supp'] == 'OJ'] <- df3.2$len[df3.2[,'supp'] == 'OJ'] + 0.5
 
 df3.2 %>%
   mutate(len = ifelse(supp == 'OJ', len + 0.5, len)) #dplyrs
+
+#  iii) Remove the column `dose` from the data and assign the output to df3.3
+df3.3 <- ToothGrowth[, -3]
+df3.3 <- subset(ToothGrowth, select = -c(dose))
+df3.3
+
+df3.3 <- ToothGrowth %>% select(-c(dose))
+df3.3
+#  iv) Increase the value of `dose` by 0.1 for all records and rename `dose` to `dose.new` and assign output to df3.4 
+df3.4 <- ToothGrowth
+df3.4$dose.new <- df3.4$dose + 0.1
+df3.4
