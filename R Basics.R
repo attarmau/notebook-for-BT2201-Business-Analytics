@@ -77,7 +77,8 @@ ToothGrowth$supp
 
 #  ii)	Next use is.factor() and is.ordered() to check if supp is a factor and if so whether it is an ordered factor. 
 is.factor(ToothGrowth$supp)
-
-#  iii) Now supposed we find that vitamin C (VC) is a superior supplement compared to orange juice (OJ), and we want to order `supp` such that VC is a higher level than OJ, how could we do this? 
 is.ordered(ToothGrowth$supp)
 
+#  iii) Now supposed we find that vitamin C (VC) is a superior supplement compared to orange juice (OJ), and we want to order `supp` such that VC is a higher level than OJ, how could we do this? 
+factor_supp <- factor(ToothGrowth$supp, levels=c('OJ', 'VC'), ordered = TRUE)
+factor_supp
