@@ -1,3 +1,20 @@
+Context: Use data(‘ceosal1’). This is a data set from a 1991 issue of Business Week of CEO’s salaries in 1990.  
+
+The data.frame has 209 observations on 12 variables: 
+
+- `salary`: 1990 salary, thousands $ 
+- `pcsalary`: percent change salary, 1989-1990 
+- `sales`: 1990 firm sales, millions $ 
+- `roe`: return on equity, 1988-1990 avg 
+- `pcroe`: percent change roe, 1988-1990
+- `ros`: return on firm’s stock, 1988-1990
+- `indus`: =1 if industrial firm 
+- `finance`: =1 if financial firm
+- `consprod`: =1 if consumer product firm 
+- `utility`: =1 if transport or utilities 
+- `lsalary`: natural log of salary 
+- `lsales`: natural log of sales
+
 In the past, the proportion of CEO with salary greater than $1 million has averaged around 0.50 (i.e. population proportion for `salary` >= 1million is 0.50). Based on the sample in this dataset, is there sufficient evidence (at 5% level of significance) to conclude that the population proportion for salary being greater than  $1million is equal to 0.5? State your hypotheses, conduct the hypotheses test and provide conclusions.
 
 # Z statistic <- one sample test for proportion
