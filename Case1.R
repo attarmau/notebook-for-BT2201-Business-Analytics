@@ -18,6 +18,10 @@ library(wooldridge)
 library(knitr)
 library(tidyverse)
 
+# load the dataset
+library(readxl)
+Cars93 <- read.csv('put on ypur file link here')
+
 #Case: CEO Salaries 
 Context: Use data(‘ceosal1’). This is a data set from a 1991 issue of Business Week of CEO’s salaries in 1990.  
 
