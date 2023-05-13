@@ -12,8 +12,8 @@ plt.ylabel('% null values')
 plt.show()
 
 # Top 10 correlated variables
-df.drop(columns=[''], inplace=True)
-corr = df[df['flag_bad'] == 1].corr()
+df.drop(columns=['put your column name that you want to drop here'], inplace=True)
+corr = df[df['name of target column'] == 1].corr()
 corrdf = corr.where(np.triu(np.ones(corr.shape), k=1).astype(np.bool))
 corrdf = corrdf.unstack().reset_index()
 corrdf.columns = ['Var1', 'Var2', 'Correlation']
