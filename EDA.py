@@ -1,5 +1,6 @@
 df['put ur column name here'].dtype # dtype('float64')
 df.info()
+df_app.shape # (row number, column number) 
 df.describe()
 df.isnull().sum() # check missing value
 
