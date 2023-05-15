@@ -21,3 +21,6 @@ corrdf.dropna(subset = ['Correlation'], inplace = True)
 corrdf['Correlation'] = round(corrdf['Correlation'], 2)
 corrdf['Correlation'] = abs(corrdf['Correlation'])
 corrdf.sort_values(by = 'Correlation', ascending = False).head(10)
+
+my_report = sv.analyze(df)
+my_report.show_notebook()
