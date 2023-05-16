@@ -1,4 +1,4 @@
-# 
+# Sweetviz
 my_report = sv.analyze(df)
 my_report.show_notebook()
 
