@@ -1,3 +1,12 @@
+# 
+my_report = sv.analyze(df)
+my_report.show_notebook()
+
+pd.DataFrame(df)
+df.shape
+df.info()
+df.isnull().sum() # check missing value
+
 df['put ur column name here'].dtype # dtype('float64')
 df.info()
 df_app.shape # (row number, column number) 
@@ -21,10 +30,4 @@ corrdf['Correlation'] = round(corrdf['Correlation'], 2)
 corrdf['Correlation'] = abs(corrdf['Correlation'])
 corrdf.sort_values(by = 'Correlation', ascending = False).head(10)
 
-my_report = sv.analyze(df)
-my_report.show_notebook()
 
-pd.DataFrame(df)
-df.shape
-df.info()
-df.isnull().sum() # check missing value
