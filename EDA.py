@@ -3,6 +3,7 @@ df.info()
 df_app.shape # (row number, column number) 
 df.describe()
 df.isnull().sum() # check missing value
+pd.DataFrame(df)
 
 # grafical representation of columns having % null values
 plt.figure(figsize= (20,4),dpi=300)
