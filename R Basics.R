@@ -146,7 +146,6 @@ count(dfc3iii)
 
 # (For tutorial discussion: How would you described the rows of observations that were extracted in parts ii and iii?) 
 
-
 #### 4) Sorting
 # i)	Using base R, keep only observations where Time is 8 and assign these data to a dataframe dfc4. Sort `dfc4` in increasing 
 #     order of `Size`. Looking at `dfc4`, how many large and small chicks are there at Time=8? (3 marks)
@@ -158,7 +157,6 @@ dfc4 <- dfc[dfc$Time == 8,]
 sort(dfc4$size)
 count(dfc4[dfc4$size == 'Large',])
 count(dfc4[dfc4$size == 'Small',])
-
 
 #ii
 dfc [order(dfc$wtkg, decreasing = TRUE) & order(dfc$Chick, decreasing = FALSE),]
