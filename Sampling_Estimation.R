@@ -10,6 +10,7 @@ library("tidyr")
 # i) compute the 95% and 99% confidence intervals for the mean of `Amount` for DVD sale transactions. Which interval is wider and how does a wider interval affect type 1 error?
 dfD <- ST%>%filter(Product=='DVD')
 plot(density(dfD$Amount), main = 'Density lot for 'Amount' for DVD orders)
+
 uCIamt95 <- mean(dfD$Amount) - qt(0.025, df = nrow(dfD) - 1)*sd(dfD$Amount)sqrt(nrow(dfD))
 lCIamt95 <- mean(dfD$Amount) + qt(0.025, df = nrow(dfD) - 1)*sd(dfD$Amount)sqrt(nrow(dfD))
 print(cbind(lCIamt95, uCIamt95), digit = 4)
