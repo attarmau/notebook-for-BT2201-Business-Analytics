@@ -10,9 +10,11 @@ def cellular_automaton(rule, seed, t, N):
         initial_seed[N // 2] = 1
         elif seed == "random":
         initial_seed = np.random.randint(0, 2, N)
+    
     # Create an array to store the state of each cell for each iteration
     states = np.zeros((t, N), dtype=int)
     states[0] = initial_seed
+
     # Iterate over each row and apply the transition rule to each cell
     for i in range(1, t):
         for j in range(N):
