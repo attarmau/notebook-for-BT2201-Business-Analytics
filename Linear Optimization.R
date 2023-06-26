@@ -29,7 +29,6 @@ objective.fn <-c(5, 4)
 const.mat <- matrix(c(300, 200, 5, 2, 1, 0, 0, 1), ncol = 2, byrow = TRUE)
 const.dir <- c('<=', '<=', '<=', '<=')
 const.rhs <- c(2400, 400, 70, 60)
-
 lp.solution <- lp('max', objective.fn, const.mat, const.dir, const.rhs, compute.sens = TRUE)
 print(lp.solution$solution)
 print(lp.solution)
