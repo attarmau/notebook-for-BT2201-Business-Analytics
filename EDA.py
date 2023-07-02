@@ -6,7 +6,6 @@ pd.DataFrame(df)
 df.shape
 df.info()
 df.isnull().sum() # check missing value
-
 df['put ur column name here'].dtype # dtype('float64')
 df.info()
 df_app.shape # (row number, column number) 
