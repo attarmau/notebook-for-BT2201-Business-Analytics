@@ -1,6 +1,6 @@
 This section is for reviewing and practicing applying the concepts related to the Basics of R. 
 
-# i)	Extract the column `supp`
+- i)	Extract the column `supp`
 ToothGrowth$supp
 ToothGrowth[,2]
 ToothGrowth[,'supp']
