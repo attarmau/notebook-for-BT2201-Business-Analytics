@@ -10,7 +10,7 @@ ToothGrowth %>% select(supp) #using dplyr
 df2 <- ToothGrowth[ToothGrowth$supp=='VC' & ToothGrowth$dose<1,]
 df2 <- ToothGrowth %>% filter (supp=='VC' & dose<1) #using dplyr
 
-# iii)  Extract the values of `len` where `supp` is equal to “VC”
+# iii) Extract the values of `len` where `supp` is equal to “VC”
 ToothGrowth$len[ToothGrowth$supp=='VC']
 ToothGrowth %>% filter (supp=='VC') %>% select(len) #using dplyr
 
